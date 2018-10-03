@@ -1,18 +1,18 @@
 {
   "presets": [
-    ["env", {
+    ["@babel/preset-env", {
       "targets": {
-        "browsers": ["last 2 versions", "ie >= 10"],
-        "node": "current"
+        "node": "current",
+        "browsers": ["last 2 versions", "ie >= 10"]
       },
       "debug": true,
       "modules": false
     }]
   ],
   "plugins": [
-    ["transform-react-jsx"],
-    ["syntax-dynamic-import"],
-    ["transform-class-properties", {"spec": true}],
-    ["transform-object-rest-spread", { "useBuiltIns": true }]
+    ["@babel/plugin-transform-react-jsx"],
+    ["@babel/plugin-syntax-dynamic-import"],
+    ["@babel/plugin-proposal-class-properties", {"loose": true}],
+    ["@babel/plugin-proposal-object-rest-spread", { "useBuiltIns": true }]
   ]
 }
