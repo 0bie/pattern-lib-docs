@@ -7,10 +7,7 @@ const plugins = () => [cssVars, cssColorFn, cssPrefix, cssImport];
 
 module.exports = () => ({
   cssLoader: {
-    loader: 'css-loader',
-    options: {
-      minimize: {safe: true}
-    }
+    loader: 'css-loader'
   },
   postcssLoader: {
     loader: 'postcss-loader',

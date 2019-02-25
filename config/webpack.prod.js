@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const UglifyJsWebpackPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
@@ -10,10 +10,6 @@ module.exports = {
   devtool: 'source-map',
   module: {
     rules: [
-      {
-        test: /lodash/,
-        sideEffects: false
-      },
       {
         test: /react|react-dom/,
         sideEffects: false
@@ -31,20 +27,21 @@ module.exports = {
         vendor: {
           chunks: 'initial',
           name: 'vendor',
-          test: /react|lodash/,
+          test: /react/,
           enforce: true
         }
       }
-    }
+    },
+    minimizer: [new TerserPlugin({
+      cache: true,
+      parallel: true
+    })]
   },
   plugins: [
     new ManifestPlugin(),
     new webpack.HashedModuleIdsPlugin(),
-    new UglifyJsWebpackPlugin({
-      sourceMap: true
-    }),
     new CompressionWebpackPlugin({
-      asset: '[path].gz[query]',
+      filename: '[path].gz[query]',
       algorithm: 'gzip',
       test: /\.(js|html|css)$/,
       threshold: 10240,
@@ -55,9 +52,3 @@ module.exports = {
     })
   ]
 };
-
-// https://reacttraining.com/react-router/web/guides/code-splitting
-// https://webpack.js.org/guides/caching/
-// https://presentations.survivejs.com/advanced-webpack/#/?_k=35dhtk
-// https://webpack.js.org/plugins/split-chunks-plugin/
-// https://tylermcginnis.com/react-router-code-splitting/

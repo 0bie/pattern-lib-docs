@@ -1,4 +1,3 @@
-// https://speakerdeck.com/jenncreighton/flexible-architecture-for-react-components?slide=4
 import React from 'react';
 import {render} from 'react-dom';
 import {withConstrain} from './utils';
@@ -7,9 +6,8 @@ import {withConstrain} from './utils';
  * Accordion
  */
 
-import Accordion from './components/accordion';
-import AccordionSection from './components/accordion/section';
-import {accordionContent} from './components/accordion/constants';
+import {Accordion, AccordionSection} from 'pattern-lib-react';
+import {accordionContent} from './data/accordion';
 
 const accordion1 =
   <Accordion classNames={['mb--md']}>
@@ -42,9 +40,9 @@ render(
  * Avatar
  */
 
-import Avatar from './components/avatar';
-import {userIcon} from './components/icon/constants';
-import {avatarProps, avatarWithImgProps} from './components/avatar/constants';
+import {Avatar} from 'pattern-lib-react';
+import {userIcon} from './data/icon';
+import {avatarProps, avatarWithImgProps} from './data/avatar';
 
 const avatarSmall =
   <Avatar
@@ -92,8 +90,8 @@ render(
  * Blockquote
  */
 
-import Blockquote from './components/blockquote';
-import {quote1, quote2} from './components/blockquote/constants';
+import {Blockquote} from 'pattern-lib-react';
+import {quote1, quote2} from './data/blockquote';
 
 const blockquote1 =
   <Blockquote
@@ -122,8 +120,8 @@ render(
  * Bulletlist
  */
 
-import Bulletlist from './components/bulletlist';
-import {bulletlistItems} from './components/bulletlist/constants';
+import {Bulletlist} from 'pattern-lib-react';
+import {bulletlistItems} from './data/bulletlist';
 
 const bulletlist = <Bulletlist items={bulletlistItems} />;
 
@@ -136,9 +134,8 @@ render(
  * Button
  */
 
-import Button from './components/button/index';
-import ButtonGroup from './components/button/group';
-import {btnGroupBlock, btnGroupInline} from './components/button/constants';
+import {Button, ButtonGroup} from 'pattern-lib-react';
+import {btnGroupBlock, btnGroupInline} from './data/button';
 
 const buttonXs = <Button size="xs" label="Button-xs" disabled />;
 const buttonSm = <Button size="sm" label="Button-sm" />;
@@ -215,8 +212,8 @@ render(
  * Card
  */
 
-import Card from './components/card';
-import {card1, card2, card3, card4} from './components/card/constants';
+import {Card} from 'pattern-lib-react';
+import {card1, card2, card3, card4} from './data/card';
 
 const cardOne =
   <Card
@@ -261,8 +258,8 @@ render(
  * Cardlist
  */
 
-import Cardlist from './components/cardlist';
-import {cardlistProps} from './components/cardlist/constants';
+import {Cardlist} from 'pattern-lib-react';
+import {cardlistProps} from './data/cardlist';
 
 const cardlist = <Cardlist {...cardlistProps} />;
 
@@ -275,7 +272,7 @@ render(
  * Caret
  */
 
-import Caret from './components/caret';
+import {Caret} from 'pattern-lib-react';
 
 const caretTop = <Caret direction="top" />;
 const caretRight = <Caret direction="right" />;
@@ -299,9 +296,8 @@ render(
  * Carousel
  */
 
-import Carousel from './components/carousel';
-import CarouselItem from './components/carousel/item';
-import {carouselProps, carouselImg} from './components/carousel/constants';
+import {Carousel, CarouselItem} from 'pattern-lib-react';
+import {carouselProps, carouselImg} from './data/carousel';
 
 const carousel1 =
   <Carousel>
@@ -332,7 +328,7 @@ render(
  * Caret
  */
 
-import Checkbox from './components/checkbox';
+import {Checkbox} from 'pattern-lib-react';
 
 const checkboxSm =
   <Checkbox
@@ -406,8 +402,8 @@ render(
  * Data Tree
  */
 
-import DataTree from './components/datatree';
-import {dataTreeItems} from './components/datatree/constants';
+import {DataTree} from 'pattern-lib-react';
+import {dataTreeItems} from './data/datatree';
 
 const dataTree = <DataTree items={dataTreeItems} />;
 
@@ -420,11 +416,9 @@ render(
  * Dropdown
  */
 
-import Dropdown from './components/dropdown';
-import Media from './components/media';
-import Icon from './components/icon';
-import {favoriteIcon} from './components/icon/constants';
-import {dropdownProps, dropdownProps2, dropdownProps3, dropdownMedia} from './components/dropdown/constants';
+import {Dropdown, Media, Icon} from 'pattern-lib-react';
+import {favoriteIcon} from './data/icon';
+import {dropdownProps, dropdownProps2, dropdownProps3, dropdownMedia} from './data/dropdown';
 
 const mediaItemDropdown =
   <Image
@@ -462,8 +456,8 @@ render(
  * Hero
  */
 
-import Hero from './components/hero';
-import {heroCta, heroImage} from './components/hero/constants';
+import {Hero} from 'pattern-lib-react';
+import {heroCta, heroImage} from './data/hero';
 
 const heroImg =
   <Hero
@@ -495,7 +489,7 @@ render(
  * Icon
  */
 
-import {twitterIcon, heartIcon, exitIcon} from './components/icon/constants';
+import {twitterIcon, heartIcon, exitIcon} from './data/icon';
 
 const icon =
   <React.Fragment>
@@ -513,7 +507,7 @@ render(
  * Image
  */
 
-import Image from './components/image';
+import {Image} from 'pattern-lib-react';
 const imageSource = 'assets/bag/bag2.jpg';
 
 const imageXs =
@@ -566,8 +560,7 @@ render(
  * Input
  */
 
-import Input from './components/input';
-import InputGroup from './components/input/group';
+import {Input, InputGroup} from 'pattern-lib-react';
 import {
   input_sm,
   input_md,
@@ -582,7 +575,7 @@ import {
   input_rounded_xl,
   input_rounded_xxl,
   inputGroupItems
-} from './components/input/constants';
+} from './data/input';
 
 const inputXs = <Input {...input_sm} size="xs" state="error" />;
 const inputSm = <Input {...input_sm} />;
@@ -634,8 +627,8 @@ render(
  * List
  */
 
-import List from './components/list';
-import {listItems} from './components/list/constants';
+import {List} from 'pattern-lib-react';
+import {listItems} from './data/list';
 
 const list1 = <List items={listItems} classNames={['mb--md']} />;
 const list2 = <List items={listItems} rounded />;
@@ -655,7 +648,7 @@ render(
  * Media
  */
 
-import {mediaDescription} from './components/media/constants';
+import {mediaDescription} from './data/media';
 
 const mediaItem =
   <Image
@@ -713,8 +706,8 @@ render(
  * Menu
  */
 
-import Menu from './components/menu';
-import {menuProps, menuRoundedProps} from './components/menu/constants';
+import {Menu} from 'pattern-lib-react';
+import {menuProps, menuRoundedProps} from './data/menu';
 
 const menu1 = <Menu {...menuProps} />;
 const menu2 = <Menu {...menuRoundedProps} />;
@@ -734,8 +727,8 @@ render(
  * Modal
  */
 
-import Modal from './components/modal';
-import {modalProps} from './components/modal/constants';
+import {Modal} from 'pattern-lib-react';
+import {modalProps} from './data/modal';
 
 const modal1 = <Modal {...modalProps} />;
 const modal2 =
@@ -761,13 +754,13 @@ render(
  * Notice
  */
 
-import Notice from './components/notice';
+import {Notice} from 'pattern-lib-react';
 import {
   noticeProps,
   noticeWarnProps,
   noticeErrorProps,
   noticeSuccessProps,
-} from './components/notice/constants';
+} from './data/notice';
 
 const noticeDefault = <Notice {...noticeProps} />;
 const noticeWarn = <Notice {...noticeWarnProps} />;
@@ -791,10 +784,9 @@ render(
  * Pagination
  */
 
-import Pagination from './components/pagination';
-import PaginationB from './components/pagination-b';
-import {paginationItems} from './components/pagination/constants';
-import {paginationBItems} from './components/pagination-b/constants';
+import {Pagination, PaginationB} from 'pattern-lib-react';
+import {paginationItems} from './data/pagination';
+import {paginationBItems} from './data/pagination-b';
 
 const pagination1 = <Pagination items={paginationItems} />;
 const pagination2 = <Pagination items={paginationItems} rounded />;
@@ -818,8 +810,8 @@ render(
  * Picker
  */
 
-import Picker from './components/picker';
-import {pickerItems, pickerGroups} from './components/picker/constants';
+import {Picker} from 'pattern-lib-react';
+import {pickerItems, pickerGroups} from './data/picker';
 
 const picker1 =
   <Picker
@@ -853,7 +845,7 @@ render(
  * Radio
  */
 
-import Radio from './components/radio';
+import {Radio} from 'pattern-lib-react';
 
 const radioSm =
   <Radio
@@ -892,8 +884,8 @@ render(
  * Sidebar
  */
 
-import Sidebar from './components/sidebar';
-import {sidebarTop, sidebarRight, sidebarBottom, sidebarLeft} from './components/sidebar/constants';
+import {Sidebar} from 'pattern-lib-react';
+import {sidebarTop, sidebarRight, sidebarBottom, sidebarLeft} from './data/sidebar';
 
 const sidebar1 = <Sidebar {...sidebarTop} />;
 const sidebar2 = <Sidebar {...sidebarRight} />;
@@ -917,7 +909,7 @@ render(
  * Spinner
  */
 
-import Spinner from './components/spinner';
+import {Spinner} from 'pattern-lib-react';
 
 const spinnerSm = <Spinner size="sm" />;
 const spinnerMd = <Spinner size="md" />;
@@ -944,7 +936,7 @@ render(
  * Status
  */
 
-import Status from './components/status';
+import {Status} from 'pattern-lib-react';
 
 const statusOn = <Status state="on" label="Online" />;
 const statusIdle = <Status state="idle" label="Idle" />;
@@ -966,8 +958,7 @@ render(
  * Tabset
  */
 
-import Tabset from './components/tabset';
-import TabSection from './components/tabset/section';
+import {TabSet, TabSection} from 'pattern-lib-react';
 
 const tabsetContent =
   <React.Fragment>
@@ -975,20 +966,20 @@ const tabsetContent =
   </React.Fragment>;
 
 const tabset1 =
-  <Tabset>
+  <TabSet>
     <TabSection id="tab-sec1" title="A" content={tabsetContent} />
     <TabSection id="tab-sec2" title="B" content={tabsetContent} />
     <TabSection id="tab-sec3" title="C" content={tabsetContent} />
     <TabSection id="tab-sec4" title="D" content={tabsetContent} />
-  </Tabset>;
+  </TabSet>;
 
 const tabset2 =
-  <Tabset rounded>
+  <TabSet rounded>
     <TabSection id="tab-sec5" title="A" content={tabsetContent} />
     <TabSection id="tab-sec6" title="B" content={tabsetContent} />
     <TabSection id="tab-sec7" title="C" content={tabsetContent} />
     <TabSection id="tab-sec8" title="D" content={tabsetContent} />
-  </Tabset>;
+  </TabSet>;
 
 const tabset =
   <React.Fragment>
@@ -1005,8 +996,8 @@ render(
  * Timeline
  */
 
-import Timeline from './components/timeline';
-import {timelineEvents} from './components/timeline/constants';
+import {Timeline} from 'pattern-lib-react';
+import {timelineEvents} from './data/timeline';
 
 const timeline = <Timeline events={timelineEvents} />;
 
@@ -1019,8 +1010,8 @@ render(
  * Todo
  */
 
-import Todo from './components/todo';
-import {todoItems1, todoItems2} from './components/todo/constants';
+import {Todo} from 'pattern-lib-react';
+import {todoItems1, todoItems2} from './data/todo';
 
 const todo1 =
   <Todo
@@ -1051,7 +1042,7 @@ render(
  * Toggle
  */
 
-import Toggle from './components/toggle';
+import {Toggle} from 'pattern-lib-react';
 
 const toggleSm = <Toggle id="toggle_sm" size="sm" />;
 const toggleMd = <Toggle id="toggle_md" size="md" />;

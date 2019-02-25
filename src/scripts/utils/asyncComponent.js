@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Spinner from '../components/spinner';
+import {Spinner} from 'pattern-lib-react';
 
 /**
  * Asynchronously load a component

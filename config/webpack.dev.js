@@ -8,7 +8,3 @@ module.exports = {
     historyApiFallback: true
   }
 };
-
-
-// https://tylermcginnis.com/react-router-cannot-get-url-refresh/
-// https://serverless-stack.com/chapters/environments-in-create-react-app.html
