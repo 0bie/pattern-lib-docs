@@ -1,0 +1,17 @@
+<div id="sprite" style="display: none;"></div>
+<script>
+  /**
+   * Add sprite to the `document`
+   */
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', '/sprite.svg');
+  xhr.onreadystatechange = () => {
+  if (xhr.readyState === 4) {
+    document.getElementById('sprite').innerHTML = xhr.responseText;
+  }
+  };
+  xhr.send();
+  Object.assign(document.body.style, {
+    margin: '1.25em', overflow: 'visible'
+  });
+</script>
