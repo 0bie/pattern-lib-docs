@@ -2,7 +2,7 @@ import React from 'react';
 
 const menuIcon = {
   id: 'menu',
-  size: 'md',
+  size: 'sm',
   title: 'Menu icon',
   classNames: ['vert--mid']
 };
@@ -59,15 +59,15 @@ export const menuProps = {
   items: [
     {
       id: 'menuitem0',
-      content: <a href="#">Item 1</a>
+      content: <span href="#">Item 1</span>
     },
     {
       id: 'menuitem1',
-      content: <a href="#">Item 2</a>
+      content: <span href="#">Item 2</span>
     },
     {
       id: 'menuitem2',
-      content: <a href="#">Item 3</a>
+      content: <span href="#">Item 3</span>
     },
     {
       id: 'menuitem3',
@@ -75,11 +75,11 @@ export const menuProps = {
     },
     {
       id: 'menuitem4',
-      content: <a href="#">Item 4</a>
+      content: <span href="#">Item 4</span>
     },
     {
       id: 'menuitem5',
-      content: <a href="#">Item 5</a>
+      content: <span href="#">Item 5</span>
     }
   ]
 };
@@ -97,37 +97,37 @@ export const menuRoundedProps = {
       id: 'menuitem8',
       icon: inboxIcon,
       classNames: ['ptb--xxs'],
-      content: <a href="#" title="Check your inbox">Inbox</a>
+      content: <span href="#" title="Check your inbox">Inbox</span>
     },
     {
       id: 'menuitem9',
       icon: cartIcon,
       classNames: ['ptb--xxs'],
-      content: <a href="#" title="Items in your cart">My Bag</a>
+      content: <span href="#" title="Items in your cart">My Bag</span>
     },
     {
       id: 'menuitem10',
       icon: favoriteIcon,
       classNames: ['ptb--xxs'],
-      content: <a href="#" title="Your favorite items">My Favorites</a>
+      content: <span href="#" title="Your favorite items">My Favorites</span>
     },
     {
       id: 'menuitem11',
       icon: settingsIcon,
       classNames: ['ptb--xxs'],
-      content: <a href="#" title="Adjust your email preferences">Settings</a>
+      content: <span href="#" title="Adjust your email preferences">Settings</span>
     },
     {
       id: 'menuitem12',
       icon: statisticsIcon,
       classNames: ['ptb--xxs'],
-      content: <a href="#" title="Review your shopping history">Statistics</a>
+      content: <span href="#" title="Review your shopping history">Statistics</span>
     },
     {
       id: 'menuitem13',
       icon: calendarIcon,
       classNames: ['ptb--xxs'],
-      content: <a href="#" title="Organize scheduled shopping">My Calendar</a>
+      content: <span href="#" title="Organize scheduled shopping">My Calendar</span>
     }
   ]
 };

@@ -1,4 +1,3 @@
-// https://speakerdeck.com/jenncreighton/flexible-architecture-for-react-components?slide=4
 import React from 'react';
 import {render} from 'react-dom';
 import {withConstrain} from './utils';
