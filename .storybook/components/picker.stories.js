@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Picker} from 'pattern-lib-react';
+import {Container, Picker} from '@0bie/pattern-lib-react';
 import {pickerItems, pickerGroups} from '../data/picker';
 import {storiesOf} from '@storybook/react';
 
@@ -13,7 +13,7 @@ storiesOf('Picker', module)
         subtitle="Picker Subtitle"
       />
     </Container>
-  ), {notes: 'modal'})
+  ))
   .add('rounded', () => (
     <Container>
       <Picker
@@ -24,4 +24,4 @@ storiesOf('Picker', module)
         groups={pickerGroups}
       />
     </Container>
-  ), {notes: 'pagination'});
+  ));

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container} from 'pattern-lib-react';
+import {Container} from '@0bie/pattern-lib-react';
 
 /**
  * Constrain the width of a component

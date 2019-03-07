@@ -1,5 +1,5 @@
 import React from 'react';
-import {Avatar, Button} from 'pattern-lib-react';
+import {Avatar, Button} from '@0bie/pattern-lib-react';
 
 const imageIcon = {
   id: 'image1',

@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Radio} from 'pattern-lib-react';
+import {Radio} from '@0bie/pattern-lib-react';
 import {storiesOf} from '@storybook/react';
 
 storiesOf('Radio', module)
@@ -9,4 +9,4 @@ storiesOf('Radio', module)
       <Radio size="md" id="radio_md" label="Radio Label" />
       <Radio size="lg" id="radio_lg" label="Radio Label" />
     </Fragment>
-  ), {notes: 'radio'});
+  ));

@@ -6,7 +6,7 @@ import {withConstrain} from './utils';
  * Accordion
  */
 
-import {Accordion, AccordionSection} from 'pattern-lib-react';
+import {Accordion, AccordionSection} from '@0bie/pattern-lib-react';
 import {accordionContent} from './data/accordion';
 
 const accordion1 =
@@ -40,7 +40,7 @@ render(
  * Avatar
  */
 
-import {Avatar} from 'pattern-lib-react';
+import {Avatar} from '@0bie/pattern-lib-react';
 import {userIcon} from './data/icon';
 import {avatarProps, avatarWithImgProps} from './data/avatar';
 
@@ -90,7 +90,7 @@ render(
  * Blockquote
  */
 
-import {Blockquote} from 'pattern-lib-react';
+import {Blockquote} from '@0bie/pattern-lib-react';
 import {quote1, quote2} from './data/blockquote';
 
 const blockquote1 =
@@ -120,7 +120,7 @@ render(
  * Bulletlist
  */
 
-import {Bulletlist} from 'pattern-lib-react';
+import {Bulletlist} from '@0bie/pattern-lib-react';
 import {bulletlistItems} from './data/bulletlist';
 
 const bulletlist = <Bulletlist items={bulletlistItems} />;
@@ -134,7 +134,7 @@ render(
  * Button
  */
 
-import {Button, ButtonGroup} from 'pattern-lib-react';
+import {Button, ButtonGroup} from '@0bie/pattern-lib-react';
 import {btnGroupBlock, btnGroupInline} from './data/button';
 
 const buttonXs = <Button size="xs" label="Button-xs" disabled />;
@@ -212,7 +212,7 @@ render(
  * Card
  */
 
-import {Card} from 'pattern-lib-react';
+import {Card} from '@0bie/pattern-lib-react';
 import {card1, card2, card3, card4} from './data/card';
 
 const cardOne =
@@ -258,7 +258,7 @@ render(
  * Cardlist
  */
 
-import {Cardlist} from 'pattern-lib-react';
+import {Cardlist} from '@0bie/pattern-lib-react';
 import {cardlistProps} from './data/cardlist';
 
 const cardlist = <Cardlist {...cardlistProps} />;
@@ -272,7 +272,7 @@ render(
  * Caret
  */
 
-import {Caret} from 'pattern-lib-react';
+import {Caret} from '@0bie/pattern-lib-react';
 
 const caretTop = <Caret direction="top" />;
 const caretRight = <Caret direction="right" />;
@@ -296,7 +296,7 @@ render(
  * Carousel
  */
 
-import {Carousel, CarouselItem} from 'pattern-lib-react';
+import {Carousel, CarouselItem} from '@0bie/pattern-lib-react';
 import {carouselProps, carouselImg} from './data/carousel';
 
 const carousel1 =
@@ -328,7 +328,7 @@ render(
  * Caret
  */
 
-import {Checkbox} from 'pattern-lib-react';
+import {Checkbox} from '@0bie/pattern-lib-react';
 
 const checkboxSm =
   <Checkbox
@@ -402,7 +402,7 @@ render(
  * Data Tree
  */
 
-import {DataTree} from 'pattern-lib-react';
+import {DataTree} from '@0bie/pattern-lib-react';
 import {dataTreeItems} from './data/datatree';
 
 const dataTree = <DataTree items={dataTreeItems} />;
@@ -416,7 +416,7 @@ render(
  * Dropdown
  */
 
-import {Dropdown, Media, Icon} from 'pattern-lib-react';
+import {Dropdown, Media, Icon} from '@0bie/pattern-lib-react';
 import {favoriteIcon} from './data/icon';
 import {dropdownProps, dropdownProps2, dropdownProps3, dropdownMedia} from './data/dropdown';
 
@@ -456,7 +456,7 @@ render(
  * Hero
  */
 
-import {Hero} from 'pattern-lib-react';
+import {Hero} from '@0bie/pattern-lib-react';
 import {heroCta, heroImage} from './data/hero';
 
 const heroImg =
@@ -507,7 +507,7 @@ render(
  * Image
  */
 
-import {Image} from 'pattern-lib-react';
+import {Image} from '@0bie/pattern-lib-react';
 const imageSource = 'assets/bag/bag2.jpg';
 
 const imageXs =
@@ -560,7 +560,7 @@ render(
  * Input
  */
 
-import {Input, InputGroup} from 'pattern-lib-react';
+import {Input, InputGroup} from '@0bie/pattern-lib-react';
 import {
   input_sm,
   input_md,
@@ -627,7 +627,7 @@ render(
  * List
  */
 
-import {List} from 'pattern-lib-react';
+import {List} from '@0bie/pattern-lib-react';
 import {listItems} from './data/list';
 
 const list1 = <List items={listItems} classNames={['mb--md']} />;
@@ -706,7 +706,7 @@ render(
  * Menu
  */
 
-import {Menu} from 'pattern-lib-react';
+import {Menu} from '@0bie/pattern-lib-react';
 import {menuProps, menuRoundedProps} from './data/menu';
 
 const menu1 = <Menu {...menuProps} />;
@@ -727,7 +727,7 @@ render(
  * Modal
  */
 
-import {Modal} from 'pattern-lib-react';
+import {Modal} from '@0bie/pattern-lib-react';
 import {modalProps} from './data/modal';
 
 const modal1 = <Modal {...modalProps} />;
@@ -754,7 +754,7 @@ render(
  * Notice
  */
 
-import {Notice} from 'pattern-lib-react';
+import {Notice} from '@0bie/pattern-lib-react';
 import {
   noticeProps,
   noticeWarnProps,
@@ -784,7 +784,7 @@ render(
  * Pagination
  */
 
-import {Pagination, PaginationB} from 'pattern-lib-react';
+import {Pagination, PaginationB} from '@0bie/pattern-lib-react';
 import {paginationItems} from './data/pagination';
 import {paginationBItems} from './data/pagination-b';
 
@@ -810,7 +810,7 @@ render(
  * Picker
  */
 
-import {Picker} from 'pattern-lib-react';
+import {Picker} from '@0bie/pattern-lib-react';
 import {pickerItems, pickerGroups} from './data/picker';
 
 const picker1 =
@@ -845,7 +845,7 @@ render(
  * Radio
  */
 
-import {Radio} from 'pattern-lib-react';
+import {Radio} from '@0bie/pattern-lib-react';
 
 const radioSm =
   <Radio
@@ -884,7 +884,7 @@ render(
  * Sidebar
  */
 
-import {Sidebar} from 'pattern-lib-react';
+import {Sidebar} from '@0bie/pattern-lib-react';
 import {sidebarTop, sidebarRight, sidebarBottom, sidebarLeft} from './data/sidebar';
 
 const sidebar1 = <Sidebar {...sidebarTop} />;
@@ -909,7 +909,7 @@ render(
  * Spinner
  */
 
-import {Spinner} from 'pattern-lib-react';
+import {Spinner} from '@0bie/pattern-lib-react';
 
 const spinnerSm = <Spinner size="sm" />;
 const spinnerMd = <Spinner size="md" />;
@@ -936,7 +936,7 @@ render(
  * Status
  */
 
-import {Status} from 'pattern-lib-react';
+import {Status} from '@0bie/pattern-lib-react';
 
 const statusOn = <Status state="on" label="Online" />;
 const statusIdle = <Status state="idle" label="Idle" />;
@@ -958,7 +958,7 @@ render(
  * Tabset
  */
 
-import {TabSet, TabSection} from 'pattern-lib-react';
+import {TabSet, TabSection} from '@0bie/pattern-lib-react';
 
 const tabsetContent =
   <React.Fragment>
@@ -996,7 +996,7 @@ render(
  * Timeline
  */
 
-import {Timeline} from 'pattern-lib-react';
+import {Timeline} from '@0bie/pattern-lib-react';
 import {timelineEvents} from './data/timeline';
 
 const timeline = <Timeline events={timelineEvents} />;
@@ -1010,7 +1010,7 @@ render(
  * Todo
  */
 
-import {Todo} from 'pattern-lib-react';
+import {Todo} from '@0bie/pattern-lib-react';
 import {todoItems1, todoItems2} from './data/todo';
 
 const todo1 =
@@ -1042,7 +1042,7 @@ render(
  * Toggle
  */
 
-import {Toggle} from 'pattern-lib-react';
+import {Toggle} from '@0bie/pattern-lib-react';
 
 const toggleSm = <Toggle id="toggle_sm" size="sm" />;
 const toggleMd = <Toggle id="toggle_md" size="md" />;

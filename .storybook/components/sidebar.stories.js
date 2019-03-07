@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Container, Sidebar} from 'pattern-lib-react';
+import {Container, Sidebar} from '@0bie/pattern-lib-react';
 import {storiesOf} from '@storybook/react';
 import {
   sidebarTop,
@@ -24,4 +24,4 @@ storiesOf('Sidebar', module)
         <Sidebar {...sidebarLeft} />
       </div>
     </div>
-  ), {notes: 'sidebar'});
+  ));

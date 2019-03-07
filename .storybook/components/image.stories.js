@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Image} from 'pattern-lib-react';
+import {Image} from '@0bie/pattern-lib-react';
 import {storiesOf} from '@storybook/react';
 
 const imageSource = '/bag/bag2.jpg';
@@ -18,4 +18,4 @@ storiesOf('Image', module)
     <Fragment>
       <Image size="xl" src={imageSource} caption="More colors available" />
     </Fragment>
-  ), {notes: 'image?'});
+  ));

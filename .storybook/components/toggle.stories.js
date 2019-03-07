@@ -1,5 +1,5 @@
 import React from 'react';
-import {Toggle} from 'pattern-lib-react';
+import {Toggle} from '@0bie/pattern-lib-react';
 import {storiesOf} from '@storybook/react';
 
 storiesOf('Toggle', module)
@@ -9,4 +9,4 @@ storiesOf('Toggle', module)
       <Toggle id="toggle_md" size="md" />
       <Toggle id="toggle_lg" size="lg" checked />
     </div>
-  ), {notes: 'toggle'});
+  ));
