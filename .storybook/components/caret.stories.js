@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Caret} from 'pattern-lib-react';
+import {Caret} from '@0bie/pattern-lib-react';
 import {storiesOf} from '@storybook/react';
 
 storiesOf('Caret', module)
@@ -10,4 +10,4 @@ storiesOf('Caret', module)
       <Caret direction="bottom" />
       <Caret direction="left" />
     </Fragment>
-  ), {notes: 'caret?'});
+  ));

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Blockquote, Container} from 'pattern-lib-react';
+import {Blockquote, Container} from '@0bie/pattern-lib-react';
 import {quote1, quote2} from '../data/blockquote';
 import {storiesOf} from '@storybook/react';
 
@@ -13,4 +13,4 @@ storiesOf('Blockquote', module)
     <Container>
       <Blockquote {...quote2} quote={quote2.user.quote} />
     </Container>
-  ), {notes: 'rounded'});
+  ));

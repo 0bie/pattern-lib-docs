@@ -1,5 +1,5 @@
 import React from 'react';
-import {Avatar} from 'pattern-lib-react';
+import {Avatar} from '@0bie/pattern-lib-react';
 
 const user1 = {
   firstName: 'dick',

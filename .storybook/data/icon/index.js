@@ -24,7 +24,6 @@ export const favoriteIcon = {
   size: 'sm',
   id: 'heart',
   title: 'favorite',
-  classNames: ['vert--mid'],
   description: 'favorite this content'
 };
 

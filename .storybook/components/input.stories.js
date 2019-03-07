@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Input, InputGroup} from 'pattern-lib-react';
+import {Input, InputGroup} from '@0bie/pattern-lib-react';
 import {
   input_sm,
   input_md,
@@ -36,19 +36,19 @@ storiesOf('Input', module)
       <Input {...input_rounded_xl} />
       <Input {...input_rounded_xxl} />
     </Fragment>
-  ), {notes: 'input?'})
+  ))
   .add('states', () => (
     <Fragment>
       <Input {...input_sm} size="xs" state="error" classNames={['mr--sm']} />
       <Input {...input_sm} size="xs" state="success" />
     </Fragment>
-  ), {notes: 'input?'})
+  ))
   .add('with icon', () => (
     <Fragment>
       <Input {...input_search} />
       <Input {...input_search_rounded} />
     </Fragment>
-  ), {notes: 'input?'})
+  ))
   .add('with group', () => (
     <Fragment>
       <div className="mb--sm">

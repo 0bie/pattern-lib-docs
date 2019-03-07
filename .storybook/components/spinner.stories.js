@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Spinner} from 'pattern-lib-react';
+import {Spinner} from '@0bie/pattern-lib-react';
 import {storiesOf} from '@storybook/react';
 
 storiesOf('Spinner', module)
@@ -11,4 +11,4 @@ storiesOf('Spinner', module)
       <Spinner size="xl" />
       <Spinner size="xxl" />
     </Fragment>
-  ), {notes: 'spinner'});
+  ));

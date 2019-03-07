@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Avatar, Container, Image, Media, Icon} from 'pattern-lib-react';
+import {Avatar, Container, Image, Media, Icon} from '@0bie/pattern-lib-react';
 import {mediaDescription} from '../data/media';
 import {avatarWithImgProps} from '../data/avatar';
 import {favoriteIcon} from '../data/icon';

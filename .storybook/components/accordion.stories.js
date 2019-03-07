@@ -1,5 +1,5 @@
 import React from 'react';
-import {Accordion, AccordionSection, Container} from 'pattern-lib-react';
+import {Accordion, AccordionSection, Container} from '@0bie/pattern-lib-react';
 import {accordionContent} from '../data/accordion';
 import {storiesOf} from '@storybook/react';
 
@@ -13,7 +13,7 @@ storiesOf('Accordion', module)
         <AccordionSection id="accd-sec4" title="Accordion Title 4">{accordionContent}</AccordionSection>
       </Accordion>
     </Container>
-  ), {notes: 'accordion?'})
+  ))
   .add('rounded', () => (
     <Container>
       <Accordion rounded>
@@ -23,4 +23,4 @@ storiesOf('Accordion', module)
         <AccordionSection id="accd-sec8" title="Accordion Title 4">{accordionContent}</AccordionSection>
       </Accordion>
     </Container>
-  ), {notes: 'accordion rounded?'});
+  ));
