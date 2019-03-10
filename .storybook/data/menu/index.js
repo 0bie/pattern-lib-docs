@@ -71,6 +71,7 @@ export const menuProps = {
     },
     {
       id: 'menuitem3',
+      classNames: ['menu-divider'],
       content: <div className="divider" />
     },
     {
@@ -92,7 +93,11 @@ export const menuRoundedProps = {
       icon: menuIcon,
       content: <h4 className="menu-title vert--mid">Menu</h4>
     },
-    {id: 'menuitem7', content: <div className="divider" />},
+    {
+      id: 'menuitem7',
+      classNames: ['menu-divider'],
+      content: <div className="divider" />
+    },
     {
       id: 'menuitem8',
       icon: inboxIcon,
