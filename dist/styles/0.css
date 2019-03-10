@@ -1587,6 +1587,9 @@ img:not([alt]) {
   padding: 0.125em 0.625em;
   color: inherit;
   text-decoration: none; }
+.menu-divider a {
+  padding: 0;
+  width: 100%; }
 .menu-item .icon {
   margin-right: 0.5em;
   opacity: 0.85; }
@@ -2384,7 +2387,8 @@ select {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: calc( 0.5 * 1em );
-  padding: calc( 0.5 / 2 * 1em ) calc( 0.5 * 2em ); }
+  padding-top: calc( 0.5 / 2 * 1em );
+  padding-bottom: calc( 0.5 / 2 * 1em ); }
 .modal-title {
   font-size: 1.25rem;
   -webkit-box-flex: 1;
@@ -2466,132 +2470,132 @@ select {
   -webkit-box-shadow: 0 0.0625em 0.25em 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.0625em 0.25em 0 rgba(0, 0, 0, 0.2); }
 .avatar--a {
-  background-color: rgba(148, 209, 202, 0.85);
-  color: rgba(33, 43, 41, 0.85); }
+  background-color: rgba(148, 209, 162, 0.85);
+  color: rgba(33, 43, 36, 0.85); }
 .avatar--a .icon {
-    fill: rgba(33, 43, 41, 0.85); }
+    fill: rgba(33, 43, 36, 0.85); }
 .avatar--b {
-  background-color: rgba(148, 209, 208, 0.85);
-  color: rgba(33, 43, 43, 0.85); }
-.avatar--b .icon {
-    fill: rgba(33, 43, 43, 0.85); }
-.avatar--c {
   background-color: rgba(148, 209, 170, 0.85);
   color: rgba(33, 43, 37, 0.85); }
-.avatar--c .icon {
+.avatar--b .icon {
     fill: rgba(33, 43, 37, 0.85); }
-.avatar--d {
-  background-color: rgba(209, 192, 148, 0.85);
-  color: rgba(43, 41, 33, 0.85); }
-.avatar--d .icon {
-    fill: rgba(43, 41, 33, 0.85); }
-.avatar--e {
-  background-color: rgba(148, 197, 209, 0.85);
-  color: rgba(31, 39, 41, 0.85); }
-.avatar--e .icon {
-    fill: rgba(31, 39, 41, 0.85); }
-.avatar--f {
-  background-color: rgba(148, 209, 176, 0.85);
-  color: rgba(33, 43, 38, 0.85); }
-.avatar--f .icon {
-    fill: rgba(33, 43, 38, 0.85); }
-.avatar--g {
-  background-color: rgba(153, 148, 209, 0.85);
-  color: rgba(255, 255, 255, 0.85); }
-.avatar--g .icon {
-    fill: rgba(255, 255, 255, 0.85); }
-.avatar--h {
-  background-color: rgba(148, 209, 164, 0.85);
+.avatar--c {
+  background-color: rgba(148, 209, 163, 0.85);
   color: rgba(33, 43, 36, 0.85); }
-.avatar--h .icon {
+.avatar--c .icon {
     fill: rgba(33, 43, 36, 0.85); }
+.avatar--d {
+  background-color: rgba(148, 160, 209, 0.85);
+  color: rgba(255, 255, 255, 0.85); }
+.avatar--d .icon {
+    fill: rgba(255, 255, 255, 0.85); }
+.avatar--e {
+  background-color: rgba(148, 174, 209, 0.85);
+  color: rgba(255, 255, 255, 0.85); }
+.avatar--e .icon {
+    fill: rgba(255, 255, 255, 0.85); }
+.avatar--f {
+  background-color: rgba(209, 168, 148, 0.85);
+  color: rgba(255, 255, 255, 0.85); }
+.avatar--f .icon {
+    fill: rgba(255, 255, 255, 0.85); }
+.avatar--g {
+  background-color: rgba(148, 209, 174, 0.85);
+  color: rgba(33, 43, 38, 0.85); }
+.avatar--g .icon {
+    fill: rgba(33, 43, 38, 0.85); }
+.avatar--h {
+  background-color: rgba(209, 154, 148, 0.85);
+  color: rgba(255, 255, 255, 0.85); }
+.avatar--h .icon {
+    fill: rgba(255, 255, 255, 0.85); }
 .avatar--i {
-  background-color: rgba(209, 199, 148, 0.85);
-  color: rgba(43, 41, 33, 0.85); }
+  background-color: rgba(148, 158, 209, 0.85);
+  color: rgba(255, 255, 255, 0.85); }
 .avatar--i .icon {
-    fill: rgba(43, 41, 33, 0.85); }
+    fill: rgba(255, 255, 255, 0.85); }
 .avatar--j {
-  background-color: rgba(200, 209, 148, 0.85);
-  color: rgba(41, 43, 33, 0.85); }
+  background-color: rgba(148, 174, 209, 0.85);
+  color: rgba(255, 255, 255, 0.85); }
 .avatar--j .icon {
-    fill: rgba(41, 43, 33, 0.85); }
+    fill: rgba(255, 255, 255, 0.85); }
 .avatar--k {
-  background-color: rgba(148, 209, 191, 0.85);
-  color: rgba(33, 43, 41, 0.85); }
-.avatar--k .icon {
-    fill: rgba(33, 43, 41, 0.85); }
-.avatar--l {
-  background-color: rgba(148, 168, 209, 0.85);
-  color: rgba(255, 255, 255, 0.85); }
-.avatar--l .icon {
-    fill: rgba(255, 255, 255, 0.85); }
-.avatar--m {
-  background-color: rgba(148, 209, 197, 0.85);
-  color: rgba(33, 43, 41, 0.85); }
-.avatar--m .icon {
-    fill: rgba(33, 43, 41, 0.85); }
-.avatar--n {
-  background-color: rgba(209, 186, 148, 0.85);
-  color: rgba(41, 37, 31, 0.85); }
-.avatar--n .icon {
-    fill: rgba(41, 37, 31, 0.85); }
-.avatar--o {
-  background-color: rgba(148, 185, 209, 0.85);
-  color: rgba(255, 255, 255, 0.85); }
-.avatar--o .icon {
-    fill: rgba(255, 255, 255, 0.85); }
-.avatar--p {
-  background-color: rgba(153, 209, 148, 0.85);
-  color: rgba(34, 43, 33, 0.85); }
-.avatar--p .icon {
-    fill: rgba(34, 43, 33, 0.85); }
-.avatar--q {
-  background-color: rgba(148, 209, 180, 0.85);
-  color: rgba(33, 43, 39, 0.85); }
-.avatar--q .icon {
-    fill: rgba(33, 43, 39, 0.85); }
-.avatar--r {
-  background-color: rgba(209, 192, 148, 0.85);
-  color: rgba(43, 41, 33, 0.85); }
-.avatar--r .icon {
-    fill: rgba(43, 41, 33, 0.85); }
-.avatar--s {
-  background-color: rgba(209, 199, 148, 0.85);
-  color: rgba(43, 41, 33, 0.85); }
-.avatar--s .icon {
-    fill: rgba(43, 41, 33, 0.85); }
-.avatar--t {
   background-color: rgba(148, 151, 209, 0.85);
   color: rgba(255, 255, 255, 0.85); }
-.avatar--t .icon {
+.avatar--k .icon {
     fill: rgba(255, 255, 255, 0.85); }
-.avatar--u {
-  background-color: rgba(148, 209, 171, 0.85);
+.avatar--l {
+  background-color: rgba(148, 205, 209, 0.85);
+  color: rgba(33, 43, 43, 0.85); }
+.avatar--l .icon {
+    fill: rgba(33, 43, 43, 0.85); }
+.avatar--m {
+  background-color: rgba(148, 209, 168, 0.85);
   color: rgba(33, 43, 37, 0.85); }
-.avatar--u .icon {
+.avatar--m .icon {
     fill: rgba(33, 43, 37, 0.85); }
+.avatar--n {
+  background-color: rgba(148, 183, 209, 0.85);
+  color: rgba(255, 255, 255, 0.85); }
+.avatar--n .icon {
+    fill: rgba(255, 255, 255, 0.85); }
+.avatar--o {
+  background-color: rgba(148, 209, 161, 0.85);
+  color: rgba(33, 43, 36, 0.85); }
+.avatar--o .icon {
+    fill: rgba(33, 43, 36, 0.85); }
+.avatar--p {
+  background-color: rgba(148, 209, 160, 0.85);
+  color: rgba(33, 43, 35, 0.85); }
+.avatar--p .icon {
+    fill: rgba(33, 43, 35, 0.85); }
+.avatar--q {
+  background-color: rgba(209, 202, 148, 0.85);
+  color: rgba(43, 41, 33, 0.85); }
+.avatar--q .icon {
+    fill: rgba(43, 41, 33, 0.85); }
+.avatar--r {
+  background-color: rgba(148, 200, 209, 0.85);
+  color: rgba(33, 41, 43, 0.85); }
+.avatar--r .icon {
+    fill: rgba(33, 41, 43, 0.85); }
+.avatar--s {
+  background-color: rgba(148, 209, 193, 0.85);
+  color: rgba(33, 43, 41, 0.85); }
+.avatar--s .icon {
+    fill: rgba(33, 43, 41, 0.85); }
+.avatar--t {
+  background-color: rgba(209, 199, 148, 0.85);
+  color: rgba(43, 41, 33, 0.85); }
+.avatar--t .icon {
+    fill: rgba(43, 41, 33, 0.85); }
+.avatar--u {
+  background-color: rgba(209, 195, 148, 0.85);
+  color: rgba(43, 41, 33, 0.85); }
+.avatar--u .icon {
+    fill: rgba(43, 41, 33, 0.85); }
 .avatar--v {
-  background-color: rgba(177, 209, 148, 0.85);
-  color: rgba(38, 43, 33, 0.85); }
+  background-color: rgba(152, 148, 209, 0.85);
+  color: rgba(255, 255, 255, 0.85); }
 .avatar--v .icon {
-    fill: rgba(38, 43, 33, 0.85); }
+    fill: rgba(255, 255, 255, 0.85); }
 .avatar--w {
-  background-color: rgba(209, 162, 148, 0.85);
+  background-color: rgba(158, 148, 209, 0.85);
   color: rgba(255, 255, 255, 0.85); }
 .avatar--w .icon {
     fill: rgba(255, 255, 255, 0.85); }
 .avatar--x {
-  background-color: rgba(148, 161, 209, 0.85);
-  color: rgba(255, 255, 255, 0.85); }
+  background-color: rgba(148, 209, 195, 0.85);
+  color: rgba(33, 43, 41, 0.85); }
 .avatar--x .icon {
-    fill: rgba(255, 255, 255, 0.85); }
+    fill: rgba(33, 43, 41, 0.85); }
 .avatar--y {
-  background-color: rgba(187, 209, 148, 0.85);
-  color: rgba(40, 43, 33, 0.85); }
+  background-color: rgba(148, 182, 209, 0.85);
+  color: rgba(255, 255, 255, 0.85); }
 .avatar--y .icon {
-    fill: rgba(40, 43, 33, 0.85); }
+    fill: rgba(255, 255, 255, 0.85); }
 .avatar--z {
-  background-color: rgba(148, 191, 209, 0.85);
+  background-color: rgba(148, 179, 209, 0.85);
   color: rgba(255, 255, 255, 0.85); }
 .avatar--z .icon {
     fill: rgba(255, 255, 255, 0.85); }
