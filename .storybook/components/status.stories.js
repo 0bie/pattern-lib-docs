@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Status} from 'pattern-lib-react';
+import {Status} from '@0bie/pattern-lib-react';
 import {storiesOf} from '@storybook/react';
 
 storiesOf('Status', module)
@@ -9,4 +9,4 @@ storiesOf('Status', module)
       <div className="mb--xs"><Status state="idle" label="Idle" /></div>
       <div><Status state="off" label="Offline" /></div>
     </Fragment>
-  ), {notes: 'spinner'});
+  ));

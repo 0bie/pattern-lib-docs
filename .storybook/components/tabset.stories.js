@@ -4,7 +4,7 @@ import {
   Icon,
   TabSet,
   TabSection
-} from 'pattern-lib-react';
+} from '@0bie/pattern-lib-react';
 import {storiesOf} from '@storybook/react';
 import {favoriteIcon} from '../data/icon';
 
@@ -29,4 +29,4 @@ storiesOf('Tabset', module)
         <TabSection id="tab-sec8" title="D" content={tabsetContent} />
       </TabSet>
     </div>
-  ), {notes: 'tabset'});
+  ));

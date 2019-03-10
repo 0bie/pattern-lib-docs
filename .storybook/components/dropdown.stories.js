@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Dropdown, Image, Media, Icon} from 'pattern-lib-react';
+import {Dropdown, Image, Media, Icon} from '@0bie/pattern-lib-react';
 import {favoriteIcon} from '../data/icon';
 import {dropdownProps, dropdownProps2, dropdownProps3, dropdownMedia} from '../data/dropdown';
 import {storiesOf} from '@storybook/react';
@@ -18,7 +18,7 @@ const mediaFooterContent =
 storiesOf('Dropdown', module)
   .add('default', () => (
     <Dropdown {...dropdownProps} />
-  ), {notes: 'dropdown?'})
+  ))
   .add('rounded', () => (
     <Dropdown
       {...dropdownProps2}
@@ -27,4 +27,4 @@ storiesOf('Dropdown', module)
   ), {notes: 'dropdown?'})
   .add('rounded with list', () => (
     <Dropdown {...dropdownProps3} />
-  ), {notes: 'dropdown?'});
+  ));
